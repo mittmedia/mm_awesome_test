@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IAmTheClient</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<form id="login">
+  <input type="text" name="email" id="email" placeholder="E-post" />
+  <input type="text" name="email" id="email" placeholder="Lösenord" />
+  <button type="submit">Logga in</button>
+</form>
+
+<%= yield %>
+
+<script type="text/javascript" src="http://localhost:3000/home/sign_in"></script>
+
+</body>
+</html>
